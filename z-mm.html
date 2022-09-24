@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatibe" content="IE-edge" />
+		<meta name="vieport" content="width=device-width, initial-scale=1.0" />
+		<title>SMK PUSTEK SERPONG</title>
+
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<!-- Navigation -->
+		<nav>
+			<img src="images/Logo_pustek.png" alt="" />
+			<div class="navigation">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="tentang.html">About</a></li>
+					<li><a class="active" href="jurusan.html">Majors</a></li>
+					<li><a href="ekskul.html">Extracurricular</a></li>
+					<li><a href="galeri.html">Gallery</a></li>
+					<li><a href="kontak.html">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- home -->
+		<section id="majors-container">
+			<div class="majorss majorpost">
+				<div class="post">
+					<img src="images/pustek/mm.jpg" alt="" />
+					<h3>Multimedia</h3>
+					<p>
+						Multimedia adalah komputer untuk menyajikan dan menggabungkan teks,
+						suara, gambar, animasi, audio, dan video dengan alat bantu (tool)
+						dan tautan (link) sehingga pengguna dapat melakukan navigasi,
+						berinteraksi, berkarya, dan berkomunikasi. Multimedia sering
+						digunakan dalam dunia informatika. Selain dari dunia informatika,
+						multimedia juga diadopsi oleh dunia gim, dan juga pembuatan situs
+						web. <br /><br /><strong><span style="color: #008000"
+							>A. KOMPETENSI KEJURUAN</span></strong></span
+						><br /><br /><span>- Mengoperasikan periferal grafis</span
+						><br /><span
+							>- Melakukan entry data [grafis] dengan menggunakan Image scanner
+							(Level l )</span
+						><br /><span>- Mengoperasikan periferal web</span><br /><span
+							>- Melakukan entry data [web] dengan menggunakan Image scanner
+							(Level 2)</span
+						><br /><span>- Mengoperasikan periferal multimedia</span><br /><span
+							>- Melakukan entry data [multimedia] dengan menggunakan Image
+							scanner (Level 2)</span
+						><br /><span>- Mengoperasikan periferal animasi 3 dimensi</span
+						><br /><span>- Mengoperasikan periferal perekam suara</span
+						><br /><span>- Mengoperasikan periferal perekam gambar</span
+						><br /><span
+							>- Mengoperasikan software pengolah gambar vektor (digital
+							illustration)</span
+						><br /><span
+							>- Mengoperasikan software pengolah gambar raster (digital
+							imaging)</span
+						><br /><span>- Mengoperasikan software web design</span><br /><span
+							>- Mengoperasikan software animasi 2D (2D animation)</span
+						><br /><span>- Mengoperasikan software FTP</span><br /><span
+							>- Mengoperasikan software multimedia</span
+						><br /><span>- Mengoperasikan software presentasi (Level 2)</span
+						><br /><span
+							>- Mengoperasikan software basic 3D animation (Level 1)</span
+						><br /><span
+							>- Mengoperasikan software model 3D animation (Level 2)</span
+						><br /><span>- Mengoperasikan software digital audio</span
+						><br /><span>- Mengoperasikan software digital video</span
+						><br /><span>- Mengoperasikan software visual effects</span>
+					</p>
+					<a href="javascript:history.back()">Back</a>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="footer-col">
+				<h3>Copyright © 2022 I This Website is made by bimaaQt.</h3>
+			</div>
+			<div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+		</footer>
+		<script>
+			function showTime() {
+				var date = new Date();
+				var h = date.getHours(); // 0 - 23
+				var m = date.getMinutes(); // 0 - 59
+				var s = date.getSeconds(); // 0 - 59
+				var session = "AM";
+
+				if (h == 0) {
+					h = 12;
+				}
+
+				if (h > 24) {
+					h = h - 24;
+					session = "PM";
+				}
+
+				h = h < 10 ? "0" + h : h;
+				m = m < 10 ? "0" + m : m;
+				s = s < 10 ? "0" + s : s;
+
+				var time = h + ":" + m + ":" + s + " " + session;
+				document.getElementById("MyClockDisplay").innerText = time;
+				document.getElementById("MyClockDisplay").textContent = time;
+
+				setTimeout(showTime, 1000);
+			}
+
+			showTime();
+		</script>
+	</body>
+</html>

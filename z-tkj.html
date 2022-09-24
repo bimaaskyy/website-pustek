@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatibe" content="IE-edge" />
+		<meta name="vieport" content="width=device-width, initial-scale=1.0" />
+		<title>SMK PUSTEK SERPONG</title>
+
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<!-- Navigation -->
+		<nav>
+			<img src="images/Logo_pustek.png" alt="" />
+			<div class="navigation">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="tentang.html">About</a></li>
+					<li><a class="active" href="jurusan.html">Majors</a></li>
+					<li><a href="ekskul.html">Extracurricular</a></li>
+					<li><a href="galeri.html">Gallery</a></li>
+					<li><a href="kontak.html">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- home -->
+		<section id="majors-container">
+			<div class="majorss majorpost">
+				<div class="post">
+					<img src="images/pustek/tkj.jpg" alt="" />
+					<h3>Teknik Komputer & Jaringan</h3>
+					<p>
+						Teknik Komputer dan Jaringan (disingkat TKJ) merupakan ilmu berbasis
+						Teknologi Informasi dan Komunikasi terkait kemampuan algoritma, dan
+						pemrograman komputer, perakitan komputer, perakitan jaringan
+						komputer, dan pengoperasian perangkat lunak, dan internet. Teknik
+						komputer, dan jaringan juga membutuhkan pemahaman di bidang teknik
+						listrik, dan ilmu komputer sehingga mampu mengembangkan, dan
+						mengintegrasikan perangkat lunak, dan perangkat keras.
+
+						<br /><br 
+							><strong
+								><span style="color: #008000"
+								>A. DASAR KOMPETENSI KEJURUAN</span
+								></strong
+							></span
+						><br /><br /><span>- Menginstal PC</span
+						><br /><span
+							>- Mendiagnosis permasalahan pengoperasian PC &amp; PER</span
+						><br /><span
+							>- Melakukan perbaikan system PC</span
+						><br /><span
+							>- Melakukan perbaikan Periferal</span
+						><br /><span>- Melakukan perawatan PC</span
+						><br /><span
+							>- Melakukan perawatan periferal</span
+						><br /><br /><strong
+								><span style="color: #008000"
+								>B. KOMPETENSI KEJURUAN</span
+								></strong
+							></span
+						><br /><br /><span
+							>- Menginstalasl system operasi berbasis GUI</span
+						><br /><span
+							>- Menginstalasi system berbasis Text Menginstalasi Software</span
+						><br /><span
+							>- Mem- Back Up dan Me- Restore software</span
+						><br /><span
+							>- Menginstalasi perangkat jaringan local</span
+						><br /><span
+							>- Mendiagnosis Permasalahan pengoperasian PC dengan
+							jaringan</span
+						><br /><span
+							>- Melakukan seting ulang koneksi jaringan</span
+						><br /><span
+							>- Menginstalasi system jaringan berbasis GUI dan Text</span
+						><br /><span
+							>- Menginstalasi perangkat jaringan berbasis luas</span
+						><br /><span
+							>- Melakukan perb, Seting ulang koneksi jaringan berbasis
+							luas</span
+						><br /><span
+							>- Mengadministrasikan server dalam jaringan</span
+						><br /><span>- Web Design, database</span
+						><br /><span
+							>- Perancangan Wide Area Network (WAN)</span
+						>
+					</p>
+					<a href="javascript:history.back()">Back</a>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="footer-col">
+				<h3>Copyright © 2022 I This Website is made by bimaaQt.</h3>
+			</div>
+			<div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+		</footer>
+		<script>
+			function showTime() {
+				var date = new Date();
+				var h = date.getHours(); // 0 - 23
+				var m = date.getMinutes(); // 0 - 59
+				var s = date.getSeconds(); // 0 - 59
+				var session = "AM";
+
+				if (h == 0) {
+					h = 12;
+				}
+
+				if (h > 24) {
+					h = h - 24;
+					session = "PM";
+				}
+
+				h = h < 10 ? "0" + h : h;
+				m = m < 10 ? "0" + m : m;
+				s = s < 10 ? "0" + s : s;
+
+				var time = h + ":" + m + ":" + s + " " + session;
+				document.getElementById("MyClockDisplay").innerText = time;
+				document.getElementById("MyClockDisplay").textContent = time;
+
+				setTimeout(showTime, 1000);
+			}
+
+			showTime();
+		</script>
+	</body>
+</html>

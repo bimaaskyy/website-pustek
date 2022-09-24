@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatibe" content="IE-edge" />
+		<meta name="vieport" content="width=device-width, initial-scale=1.0" />
+		<title>SMK PUSTEK SERPONG</title>
+
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<!-- Navigation -->
+		<nav>
+			<img src="images/Logo_pustek.png" alt="" />
+			<div class="navigation">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="tentang.html">About</a></li>
+					<li><a href="jurusan.html">Majors</a></li>
+					<li><a class="active" href="ekskul.html">Extracurricular</a></li>
+					<li><a href="galeri.html">Gallery</a></li>
+					<li><a href="kontak.html">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- home -->
+		<section id="tentang-home">
+			<h2>EXTRACURRICULAR /</h2>
+		</section>
+
+		<section id="ekskul">
+			<h1>Ekstrakurikuler</h1>
+			<p>
+				Ekstrakurikuler adalah Kegiatan non-pelajaran formal yang dilakukan
+				peserta didik, <br />umumnya di luar jam belajar kurikulum standar.
+				Berikut beberapa kegiatan Ekstrakurikuler di SMK Pustek Serpong:
+			</p>
+			<div class="ekskul-box">
+				<div class="ekstra">
+					<img src="images//ekskul/pmr.jpg" alt="" />
+					<div class="details">
+						<span>*Gambar Hanya Ilustrasi</span>
+						<h6>Palang Merah Remaja (PMR)</h6>
+					</div>
+				</div>
+				<div class="ekstra">
+					<img src="images//ekskul/inggris.jpg" alt="" />
+					<div class="details">
+						<span>*Gambar Hanya Ilustrasi</span>
+						<h6>Bahasa Inggris</h6>
+					</div>
+				</div>
+				<div class="ekstra">
+					<img src="images//ekskul/paskibra.jpg" alt="" />
+					<div class="details">
+						<span>*Gambar Hanya Ilustrasi</span>
+						<h6>Paskibra</h6>
+					</div>
+				</div>
+				<div class="ekstra">
+					<img src="images//ekskul/degung.jpg" alt="" />
+					<div class="details">
+						<span>*Gambar Hanya Ilustrasi</span>
+						<h6>Degung (Gamelan Sunda)</h6>
+					</div>
+				</div>
+				<div class="ekstra">
+					<img src="images//ekskul/fki.jpg" alt="" />
+					<div class="details">
+						<span>*Gambar Hanya Ilustrasi</span>
+						<h6>Forum Kajian Islam (FKI)</h6>
+					</div>
+				</div>
+				<div class="ekstra">
+					<img src="images//ekskul/bela-diri.jpg" alt="" />
+					<div class="details">
+						<span>*Gambar Hanya Ilustrasi</span>
+						<h6>Seni Bela Diri</h6>
+					</div>
+				</div>
+				<div class="ekstra">
+					<img src="images//ekskul/futsal.jpg" alt="" />
+					<div class="details">
+						<span>*Gambar Hanya Ilustrasi</span>
+						<h6>Futsal</h6>
+					</div>
+				</div>
+				<div class="ekstra">
+					<img src="images//ekskul/voli.jpg" alt="" />
+					<div class="details">
+						<span>*Gambar Hanya Ilustrasi</span>
+						<h6>Voli</h6>
+					</div>
+				</div>
+				<div class="ekstra">
+					<img src="images/ekskul/basket.jpg" alt="" />
+					<div class="details">
+						<span>*Gambar Hanya Ilustrasi</span>
+						<h6>Basket</h6>
+					</div>
+				</div>
+				<div class="ekstra">
+					<img src="images//ekskul/akuntansi.jpg" alt="" />
+					<div class="details">
+						<span>*Gambar Hanya Ilustrasi</span>
+						<h6>Komputer Akuntansi & AutoCad</h6>
+					</div>
+				</div>
+				<div class="ekstra">
+					<img src="images//ekskul/stir mobil.jpg" alt="" />
+					<div class="details">
+						<span>*Gambar Hanya Ilustrasi</span>
+						<h6>Stir Mobil</h6>
+					</div>
+				</div>
+				<div class="ekstra">
+					<img src="images//ekskul/paltek.jpg" alt="" />
+					<div class="details">
+						<span>*Gambar Hanya Ilustrasi</span>
+						<h6>Pecinta Alam (PALTEK)</h6>
+					</div>
+				</div>
+				<div class="ekstra">
+					<img src="images//ekskul/band.jpg" alt="" />
+					<div class="details">
+						<span>*Gambar Hanya Ilustrasi</span>
+						<h6>Band</h6>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="footer-col">
+				<h3>Copyright © 2022 I This Website is made by bimaaQt.</h3>
+			</div>
+			<div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+		</footer>
+		<script>
+			function showTime() {
+				var date = new Date();
+				var h = date.getHours(); // 0 - 23
+				var m = date.getMinutes(); // 0 - 59
+				var s = date.getSeconds(); // 0 - 59
+				var session = "AM";
+
+				if (h == 0) {
+					h = 12;
+				}
+
+				if (h > 24) {
+					h = h - 24;
+					session = "PM";
+				}
+
+				h = h < 10 ? "0" + h : h;
+				m = m < 10 ? "0" + m : m;
+				s = s < 10 ? "0" + s : s;
+
+				var time = h + ":" + m + ":" + s + " " + session;
+				document.getElementById("MyClockDisplay").innerText = time;
+				document.getElementById("MyClockDisplay").textContent = time;
+
+				setTimeout(showTime, 1000);
+			}
+
+			showTime();
+		</script>
+	</body>
+</html>

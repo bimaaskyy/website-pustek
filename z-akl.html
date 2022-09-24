@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatibe" content="IE-edge" />
+		<meta name="vieport" content="width=device-width, initial-scale=1.0" />
+		<title>SMK PUSTEK SERPONG</title>
+
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<!-- Navigation -->
+		<nav>
+			<img src="images/Logo_pustek.png" alt="" />
+			<div class="navigation">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="tentang.html">About</a></li>
+					<li><a class="active" href="jurusan.html">Majors</a></li>
+					<li><a href="ekskul.html">Extracurricular</a></li>
+					<li><a href="galeri.html">Gallery</a></li>
+					<li><a href="kontak.html">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- home -->
+		<section id="majors-container">
+			<div class="majorss majorpost">
+				<div class="post">
+					<img src="images/pustek/akl.jpg" alt="" />
+					<h3>Akuntansi Keuangan Lembaga</h3>
+					<p>
+						Secara umum, Akuntansi adalah suatu proses mencatat, meringkas,
+						mengklasifikasikan, mengolah, dan menyajikan data transaksi, serta
+						berbagai aktivitas yang berhubungan dengan keuangan, sehingga
+						informasi tersebut dapat digunakan oleh seseorang yang ahli di
+						bidangnya dan menjadi bahan untuk mengambil suatu keputusan. <br /><br /><strong><span
+							style="color: #008000"
+							>A. DASAR KOMPETENSI KEJURUAN</span></strong></span
+						><br /><br /><span>- Kerjasama dengan kolega dan pelanggan</span
+						><br /><span>- Berkomunikasi dengan telepon dan faximile</span
+						><br /><span>- Menjaga dan melindungi budaya kerja</span><br /><span
+							>- Mengikuti prosedur keamanan, keselamatan dan kesehatan
+							kerja</span
+						><br /><span>- Mengikuti aturan kerja sesuai lingkungan kerja</span
+						><br /><span>- Mengerjakan persamaan dasar akuntansi</span
+						><br /><span>- Mengelola bukti transkripsi</span><br /><br /><strong><span
+							style="color: #008000"
+							>B. KOMPETENSI KEJURUAN</span></strong></span
+						><br /><br /><span>- Mengelola buku jurnal</span><br /><span
+							>- Mengelola buku besar</span
+						><br /><span>- Mengelola administrasi kas dan bank</span><br /><span
+							>- Mengelola administrasi dana kas kecil</span
+						><br /><span>- Mengelola order penjualan</span><br /><span
+							>- Mengelola proses kredit</span
+						><br /><span>- Mengelola kartu piutang</span><br /><span
+							>- Mengelola penagihan piutang</span
+						><br /><span>- Mengelola administrasi pembelian</span><br /><span
+							>- Mengelola kartu utang</span
+						><br /><span>- Mengelola penerimaan barang suplier</span><br /><span
+							>- Mengelola kartu persedian barang supplies</span
+						><br /><span>- Mengelola kartu persediaan barang dagang</span
+						><br /><span>- Mengelola administrasi gudang</span><br /><span
+							>- Mengelola kartu aktiva tetap</span
+						><br /><span>- Mengelola administrasi pajak</span><br /><span
+							>- Mengelola kartu persediaan bahan baku</span
+						><br /><span>- Mengelola kartu persediaan barangjadi</span
+						><br /><span>- Mengelola administrasi gaji dan upah</span
+						><br /><span>- Mengelola kartu biaya produksi</span><br /><span
+							>- Mengerjakan siklus akuntansi manufaktur</span
+						><br /><span
+							>- Keterampilan computer akuntansi dengan MS Office, Excel, Power
+							Point, Corel Draw, Photo Shop, Web Design, Myob.</span
+						>
+					</p>
+					<a href="javascript:history.back()">Back</a>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="footer-col">
+				<h3>Copyright © 2022 I This Website is made by bimaaQt.</h3>
+			</div>
+			<div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+		</footer>
+		<script>
+			function showTime() {
+				var date = new Date();
+				var h = date.getHours(); // 0 - 23
+				var m = date.getMinutes(); // 0 - 59
+				var s = date.getSeconds(); // 0 - 59
+				var session = "AM";
+
+				if (h == 0) {
+					h = 12;
+				}
+
+				if (h > 24) {
+					h = h - 24;
+					session = "PM";
+				}
+
+				h = h < 10 ? "0" + h : h;
+				m = m < 10 ? "0" + m : m;
+				s = s < 10 ? "0" + s : s;
+
+				var time = h + ":" + m + ":" + s + " " + session;
+				document.getElementById("MyClockDisplay").innerText = time;
+				document.getElementById("MyClockDisplay").textContent = time;
+
+				setTimeout(showTime, 1000);
+			}
+
+			showTime();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatibe" content="IE-edge" />
+		<meta name="vieport" content="width=device-width, initial-scale=1.0" />
+		<title>SMK PUSTEK SERPONG</title>
+
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<!-- Navigation -->
+		<nav>
+			<img src="images/Logo_pustek.png" alt="" />
+			<div class="navigation">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="tentang.html">About</a></li>
+					<li><a class="active" href="jurusan.html">Majors</a></li>
+					<li><a href="ekskul.html">Extracurricular</a></li>
+					<li><a href="galeri.html">Gallery</a></li>
+					<li><a href="kontak.html">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- home -->
+		<section id="majors-container">
+			<div class="majorss majorpost">
+				<div class="post">
+					<img src="images/pustek/tkro2.jpg" alt="" />
+					<h3>Teknik Kendaraan Ringan Otomotif</h3>
+					<p>
+						Teknik Kendaraan Ringan Otomotif merupakan kompetensi keahlian
+						dibidang Teknik Otomotif yang menekankan keahlian pada bidang
+						penguasaan jasa perbaikan kendaraan ringan. Kompetensi keahlian
+						teknik kendaraan ringan menyiapkan peserta didik untuk bekerja pada
+						pekerjaan jasa perawatan dan perbaikan didunia usaha / industri.
+						<br /><br /><strong
+								><span style="color: #008000"
+									>A. DASAR KOMPETENSI KEJURUAN</span
+								></strong
+							></span
+						><br /><br /><span
+							>- Pengetahuan dasar teknik mesin</span
+						><br /><span
+							>- Pelaksanaan pemeliharaan / service komponen</span
+						><br /><span
+							>- Pemasangan system hidrolik</span
+						><br /><span
+							>- Pemeliharaan / service system hidrolik</span
+						><br /><span
+							>- Pemeliharaan /service kompresor udara dan komponennya</span
+						><br /><span
+							>- Melaksanakan prosedur&nbsp;&nbsp; &nbsp;pengelasan, pematrian,
+							pemotongan dengan panas dan pemanasan</span
+						><br /><span
+							>- Pembacaan dan pemahaman gambar teknik</span
+						><br /><span
+							>- Penggunaan dan pemeliharaan alat ukur</span
+						><br /><span
+							>- Mengikuti prosedur kesehatan dan keselamatan kerja serta
+							pemeliharaan tempat kerja</span
+						><br /><span
+							>- Pelaksanaan operasi secara manual</span
+						><br /><br /><strong
+							><span style="color: #008000"
+								>B. KOMPETENSI KEJURUAN</span
+							></strong
+						><br /><br /><span
+							>- Melepas, memasang dan menyetel rode</span
+						><br /><span
+							>- Pembongkaran, perbaikan dan pemasangan ban luar</span
+						><br /><span
+							>- Pengujian pemeliharaan / service dengan baterai</span
+						><br /><span
+							>- Kontribusi komunikasi di tempat kerja</span
+						><br /><span
+							>- Pemeliharaan / service system pendingin &amp; komponennya</span
+						><br /><span
+							>- Perbaikan system pendingin dan komponennya</span
+						><br /><span
+							>- Pemeliharaan / service system bahan bakar bensin</span
+						><br /><span
+							>- Pemeliharaan / service injeksi bahan baker diesel</span
+						><br /><span
+							>- Pemeliharaan/service unit kopling dan komponen system
+							pengoperasian</span
+						><br /><span
+							>- Perbaikan kopling dan komponennya</span
+						><br /><span
+							>- Pemeliharaan/service transmisi, manual, poros pengerak
+							roda</span
+						><br /><span
+							>- Perakitan dan pemasangan system rem</span
+						><br /><span
+							>- Pemeriksaan system kemudi, suspensi</span
+						><br /><span
+							>- Sistem kelistrikan, pengujian dan perbaikan system penerangan
+							dan wiring</span
+						><br /><span
+							>- Pemasangan asesories kelistrikan</span
+						><br /><span
+							>- Service engine dan komponennya</span
+						><br /><span
+							>- Overhaul system pendingin, kopling dan komponen</span
+						><br /><span
+							>- Service transmisi otomatis, drive / garden</span
+						><br /><span
+							>- Balance roda, pemeliharaan system AC</span
+						><br /><span
+							>- Keterampilan Komputer, MS Office, Excel, Auto Cad, Photo Shop,
+							Power Point</span
+						>
+					</p>
+					<a href="javascript:history.back()">Back</a>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="footer-col">
+				<h3>Copyright © 2022 I This Website is made by bimaaQt.</h3>
+			</div>
+			<div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+		</footer>
+		<script>
+			function showTime() {
+				var date = new Date();
+				var h = date.getHours(); // 0 - 23
+				var m = date.getMinutes(); // 0 - 59
+				var s = date.getSeconds(); // 0 - 59
+				var session = "AM";
+
+				if (h == 0) {
+					h = 12;
+				}
+
+				if (h > 24) {
+					h = h - 24;
+					session = "PM";
+				}
+
+				h = h < 10 ? "0" + h : h;
+				m = m < 10 ? "0" + m : m;
+				s = s < 10 ? "0" + s : s;
+
+				var time = h + ":" + m + ":" + s + " " + session;
+				document.getElementById("MyClockDisplay").innerText = time;
+				document.getElementById("MyClockDisplay").textContent = time;
+
+				setTimeout(showTime, 1000);
+			}
+
+			showTime();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatibe" content="IE-edge" />
+		<meta name="vieport" content="width=device-width, initial-scale=1.0" />
+		<title>SMK PUSTEK SERPONG</title>
+
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<!-- Navigation -->
+		<nav>
+			<img src="images/Logo_pustek.png" alt="" />
+			<div class="navigation">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="tentang.html">About</a></li>
+					<li><a class="active" href="jurusan.html">Majors</a></li>
+					<li><a href="ekskul.html">Extracurricular</a></li>
+					<li><a href="galeri.html">Gallery</a></li>
+					<li><a href="kontak.html">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- home -->
+		<section id="majors-container">
+			<div class="majorss majorpost">
+				<div class="post">
+					<img src="images/pustek/tbsm.jpg" alt="" />
+					<h3>Teknik Bisnis Sepeda Motor</h3>
+					<p>
+						Teknik Bisnis Sepeda Motor adalah kompetensi keahlian pada Bidang
+						Studi Keahlian Teknologi dan Rekayasa Program Studi Keahlian Teknik
+						Otomotif yang menekankan pada keterampilan pelayanan jasa mekanik
+						kendaraan sepeda motor roda dua. Kompetensi Keahlian Teknik Sepeda
+						Motor menyiapkan peserta didik untuk bekerja pada bidang pekerjaan
+						yang dikelola oleh badan, instansi atauperusahaan pribadi
+						(wirausaha).
+
+						<br /><br /><strong
+								><span style="color: #008000"
+									>A. DASAR KOMPETENSI KEJURUAN</span
+								></strong
+							></span
+						><br /><br /><span
+							>- Memahami dasar-dasar mesin</span
+						><br /><span
+							>- Memahami proses-proses dasar otomotif</span
+						><br /><span
+							>- Menjelaskan proses-proses mesin konversi energi</span
+						><br /><span
+							>- Menginterpretasikan gambar teknik</span
+						><br /><span
+							>- Menggunakan peralatan dan perlengkapan di tempat kerja</span
+						><br /><span
+							>- MMenggunakan alat-alat ukur (measuring tools)</span
+						><br /><span
+							>- Mengikuti prosedur kesehatan dan keselamatan kerja serta
+							pemeliharaan tempat kerja</span
+						><br /><span
+							>- Pelaksanaan operasi secara manual</span
+						><br /><br /><strong
+							><span style="color: #008000"
+								>B. KOMPETENSI KEJURUAN</span
+							></strong
+						><br /><br /><span
+							>- Melakukan perbaikan sistem hidrolik sepeda motor</span
+						><br /><span
+							>- Memperbaiki sistem gas buang</span
+						><br /><span
+							>- Pengujian pemeliharaan / service dengan baterai</span
+						><br /><span
+							>- Melaksanakan overhaul kepala silinder</span
+						><br /><span
+							>- Pemeliharaan / service system pendingin &amp; komponennya</span
+						><br /><span
+							>- Perbaikan system pendingin dan komponennya</span
+						><br /><span
+							>- Pemeliharaan / service system bahan bakar sepeda motor</span
+						><br /><span
+							>- Pemeliharaan / service injeksi bahan bakar sepeda motor</span
+						><br /><span
+							>- Pemeliharaan/service unit kopling dan komponen system
+							pengoperasian</span
+						><br /><span
+							>- Melakukan perbaikan enginesepeda motor berikut komponen-komponennya</span
+						><br /><span
+							>- Melakukan perbaikan sistem transmisi manual</span
+						><br /><span
+							>- Melakukan perbaikan sistem transmisi otomatis</span
+						><br /><span
+							>- Pemeriksaan system kemudi, suspensi</span
+						><br /><span
+							>- Sistem kelistrikan, pengujian dan perbaikan system penerangan
+							dan wiring</span
+						><br /><span
+							>- Pemasangan asesories kelistrikan</span
+						><br /><span
+							>- Service engine dan komponennya</span
+						><br /><span
+							>- Melaksanakan pekerjaan servis pada roda, ban, dan rantai</span
+						><br /><span
+							>- Melakukan perbaikan sistem rem</span
+						>
+					</p>
+					<a href="javascript:history.back()">Back</a>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="footer-col">
+				<h3>Copyright © 2022 I This Website is made by bimaaQt.</h3>
+			</div>
+			<div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+		</footer>
+		<script>
+			function showTime() {
+				var date = new Date();
+				var h = date.getHours(); // 0 - 23
+				var m = date.getMinutes(); // 0 - 59
+				var s = date.getSeconds(); // 0 - 59
+				var session = "AM";
+
+				if (h == 0) {
+					h = 12;
+				}
+
+				if (h > 24) {
+					h = h - 24;
+					session = "PM";
+				}
+
+				h = h < 10 ? "0" + h : h;
+				m = m < 10 ? "0" + m : m;
+				s = s < 10 ? "0" + s : s;
+
+				var time = h + ":" + m + ":" + s + " " + session;
+				document.getElementById("MyClockDisplay").innerText = time;
+				document.getElementById("MyClockDisplay").textContent = time;
+
+				setTimeout(showTime, 1000);
+			}
+
+			showTime();
+		</script>
+	</body>
+</html>

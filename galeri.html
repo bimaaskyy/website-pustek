@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatibe" content="IE-edge" />
+		<meta name="vieport" content="width=device-width, initial-scale=1.0" />
+		<title>SMK PUSTEK SERPONG</title>
+
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<!-- Navigation -->
+		<nav>
+			<img src="images/Logo_pustek.png" alt="" />
+			<div class="navigation">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="tentang.html">About</a></li>
+					<li><a href="jurusan.html">Majors</a></li>
+					<li><a href="ekskul.html">Extracurricular</a></li>
+					<li><a class="active" href="galeri.html">Gallery</a></li>
+					<li><a href="kontak.html">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- home -->
+		<section id="tentang-home">
+			<h2>GALLERY /</h2>
+		</section>
+
+		<!-- Header -->
+		<section id="foto">
+			<h3>Foto SMK Pustek Serpong</h3>
+
+			<!-- Photo Grid -->
+			<div class="row">
+				<div class="column">
+					<img src="galeri/1-lebar.jpg" style="width: 100%" />
+					<img src="galeri/1tinggi.jpg" style="width: 100%" />
+					<img src="galeri/1lebar.jpg" style="width: 100%" />
+					<img src="galeri/1-tinggi.jpg" style="width: 100%" />
+					<img src="galeri/1-kotak.jpg" style="width: 100%" />
+					<img src="galeri/1-strip.jpg" style="width: 100%" />
+				</div>
+				<div class="column">
+					<img src="galeri/2lebar.jpg" style="width: 100%" />
+					<img src="galeri/2-kotak.png" style="width: 100%" />
+					<img src="galeri/2tinggi.jpg" style="width: 100%" />
+					<img src="galeri/2--lebar.jpg" style="width: 100%" />
+					<img src="galeri/2-tinggi.jpg" style="width: 100%" />
+					<img src="galeri/2-lebar.jpg" style="width: 100%" />
+				</div>
+				<div class="column">
+					<img src="galeri/1-strip.jpg" style="width: 100%" />
+					<img src="galeri/1lebar.jpg" style="width: 100%" />
+					<img src="galeri/1-kotak.jpg" style="width: 100%" />
+					<img src="galeri/1-tinggi.jpg" style="width: 100%" />
+					<img src="galeri/1tinggi.jpg" style="width: 100%" />
+					<img src="galeri/1-lebar.jpg" style="width: 100%" />
+				</div>
+				<div class="column">
+					<img src="galeri/2--lebar.jpg" style="width: 100%" />
+					<img src="galeri/2-tinggi.jpg" style="width: 100%" />
+					<img src="galeri/2-kotak.png" style="width: 100%" />
+					<img src="galeri/2-lebar.jpg" style="width: 100%" />
+					<img src="galeri/2lebar.jpg" style="width: 100%" />
+
+					<img src="galeri/2tinggi.jpg" style="width: 100%" />
+				</div>
+			</div>
+		</section>
+
+		<section id="video">
+			<h3>Video SMK Pustek Serpong</h3>
+
+			<div class="container">
+				<div class="video-container">
+					<div class="video">
+						<video src="video/video.mp4" muted controls></video>
+					</div>
+					<div class="video">
+						<video src="video/video1.mp4" muted controls></video>
+					</div>
+					<div class="video">
+						<video src="video/video3.mp4" muted controls></video>
+					</div>
+					<div class="video">
+						<video src="video/video3.mp4" muted controls></video>
+					</div>
+					<div class="video">
+						<video src="video/video.mp4" muted controls></video>
+					</div>
+					<div class="video">
+						<video src="video/video1.mp4" muted controls></video>
+					</div>
+				</div>
+			</script>
+		</section>
+
+		<footer>
+			<div class="footer-col">
+				<h3>Copyright © 2022 I This Website is made by bimaaQt.</h3>
+			</div>
+			<div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+		</footer>
+		<script>
+			function showTime() {
+				var date = new Date();
+				var h = date.getHours(); // 0 - 23
+				var m = date.getMinutes(); // 0 - 59
+				var s = date.getSeconds(); // 0 - 59
+				var session = "AM";
+
+				if (h == 0) {
+					h = 12;
+				}
+
+				if (h > 24) {
+					h = h - 24;
+					session = "PM";
+				}
+
+				h = h < 10 ? "0" + h : h;
+				m = m < 10 ? "0" + m : m;
+				s = s < 10 ? "0" + s : s;
+
+				var time = h + ":" + m + ":" + s + " " + session;
+				document.getElementById("MyClockDisplay").innerText = time;
+				document.getElementById("MyClockDisplay").textContent = time;
+
+				setTimeout(showTime, 1000);
+			}
+
+			showTime();
+		</script>
+	</body>
+</html>
+
+<!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_image_grid-->

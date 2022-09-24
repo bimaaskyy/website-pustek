@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatibe" content="IE-edge">
+    <meta name="vieport" content="width=device-width, initial-scale=1.0">
+    <title>SMK PUSTEK SERPONG</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <img src="images/Logo_pustek.png" alt="">
+        <div class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="tentang.html">About</a></li>
+                <li><a href="jurusan.html">Majors</a></li>
+                <li><a href="ekskul.html">Extracurricular</a></li>
+                <li><a href="galeri.html">Gallery</a></li>
+                <li><a href="kontak.html">Contact</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- home -->
+    <section id="tentang-home">
+        <h2>ABOUT /</h2>
+    </section>
+
+    <section id="tentang-container">
+        <div class="tentang-img">
+            <img src="images/tentang1.jpg" alt="">
+        </div>
+        <div class="tentang-text">
+            <h2>Selamat Datang di Website SMK Pustek Serpong</h2>
+            <p>Website SMK Pustek Serpong ini diharapkan dapat meningkatkan layanan pendidikan kepada siswa, orangtua, dan masyarakat pada umumnya. 
+            
+            Sebaliknya orangtua dapat mengakses informasi tentang kegiatan akademik dan non akademik putra - puterinya di sekolah ini.</p>
+                <div class="tentang-fe">
+                    <img src="images/tentang2.png" alt="">
+                    <div class="fe-text">
+                        <h5>Kurikulum</h5>
+                        <p>SMK Pustek Serpong menggunakan kurikulum SMK 2013 REV. untuk menggantikan Kurikulum-2006 (yang sering disebut sebagai Kurikulum Tingkat Satuan Pendidikan) yang telah berlaku selama kurang lebih 6 tahun.</p>
+                    </div>
+                </div>
+                <div class="tentang-fe">
+                    <img src="images/tentang3.png" alt="">
+                    <div class="fe-text">
+                        <h5>Ruang Kelas</h5>
+                        <p>SMK Pustek Serpong mempunyai 36 ruang kelas yang dibagi menjadi 4 gedung.</p>
+                    </div>
+                </div>
+        </div>
+    
+    </section>
+
+    <!-- features -->
+    <section id="fea-container">
+        
+        <div class="fea-text">
+            <h1>VISI dan MISI</h1>
+            <p>Visi adalah tujuan, masa depan, cita-cita, hal yang ingin dilakukan. Misi adalah langkah, bentuk atau cara serta bagaimana untuk mewujudkannya.</p>
+
+                <div class="fea-fe">
+                    <img src="images/fea-a.png" alt="">
+                    <div class="fea-text">
+                        <h5>VISI</h5>
+                        <p>Terwujuanya SMK PUSTEK sebagai lembaga diklat kejuruan yang berorientasi pada pasar kerja, dengan  standar nasional menuju standar internasional..</p>
+                    </div>
+                </div>
+                <div class="fea-fe">
+                    <img src="images/fea-b.png" alt="">
+                    <div class="fea-text">
+                        <h5>MISI</h5>
+                        <p><ul type="disc">
+                            <li>Mengembangkan sistem pendidikan pada SMK PUSTEK yang fleksibel.</li>
+                            <li>Mengembangkan sistem pendidikan pada SMK PUSTEK yang terintegrasi, berwawasan mutu dan keunggulan, sesuai tuntutan pasar kerja.</li>
+                            <li>Memberikan pelayanan prima dalam pemberdayaan sekolah dan masyarakat.</li>
+                            <li>Mengembangkan iklim belajar yang berwawasan global yang berakar pada norma agama, dan nilai budaya bangsa Indonesia.</li></ul></p>
+                    </div>
+                </div>
+        
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.992360200822!2d106.65271931476937!3d-6.264733995465504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fb0a7ac974d3%3A0x9c1c7d9e6806703f!2sSekolah%20Menengah%20Kejuruan%20Pustek%20Serpong!5e0!3m2!1sid!2sid!4v1662870467949!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    
+
+    <footer>
+        <div class="footer-col">
+            <h3>Copyright © 2022 I This Website is made by bimaaQt.</h3>
+        </div>
+        <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+    </footer>
+    <script>
+        function showTime() {
+            var date = new Date();
+            var h = date.getHours(); // 0 - 23
+            var m = date.getMinutes(); // 0 - 59
+            var s = date.getSeconds(); // 0 - 59
+            var session = "AM";
+
+            if (h == 0) {
+                h = 12;
+            }
+
+            if (h > 24) {
+                h = h - 24;
+                session = "PM";
+            }
+
+            h = h < 10 ? "0" + h : h;
+            m = m < 10 ? "0" + m : m;
+            s = s < 10 ? "0" + s : s;
+
+            var time = h + ":" + m + ":" + s + " " + session;
+            document.getElementById("MyClockDisplay").innerText = time;
+            document.getElementById("MyClockDisplay").textContent = time;
+
+            setTimeout(showTime, 1000);
+        }
+
+        showTime();
+    </script>
+</body>
+</html>

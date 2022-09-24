@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatibe" content="IE-edge" />
+		<meta name="vieport" content="width=device-width, initial-scale=1.0" />
+		<title>SMK PUSTEK SERPONG</title>
+
+		<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+		<script src="sweetalert2.min.js"></script>
+		<link rel="stylesheet" href="sweetalert2.min.css" />
+
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<!-- Navigation -->
+		<nav>
+			<img src="images/Logo_pustek.png" alt="" />
+			<div class="navigation">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="tentang.html">About</a></li>
+					<li><a href="jurusan.html">Majors</a></li>
+					<li><a href="ekskul.html">Extracurricular</a></li>
+					<li><a href="galeri.html">Gallery</a></li>
+					<li><a class="active" href="kontak.html">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- home -->
+		<section id="tentang-home">
+			<h2>CONTACT /</h2>
+		</section>
+
+		<section id="contact">
+			<div class="getin">
+				<h2>Apa Yang Dapat Kami Bantu?</h2>
+				<p style="padding-left: 0px">
+					Mencari bantuan? isi formulir untuk temukan jawabannya.
+				</p>
+
+				<div class="getin-details">
+					<h3>Alamat</h3>
+					<div>
+						<img src="images/tentang-g.png" alt="" />
+						<p style="padding-right: 0px">
+							Jl. Raya Serpong No.17, Pd. Jagung, Kec. Serpong Utara, Kota
+							Tangerang Selatan, Banten 15322
+						</p>
+					</div>
+					<h3>Fax/Telepon</h3>
+					<div>
+						<img src="images/tentang-a.png" alt="" />
+						<p>
+							021-5388243 <br />
+							021-5388244
+						</p>
+					</div>
+					<h3>Email</h3>
+					<div>
+						<img src="images/tentang-d.png" alt="" />
+						<p>smk@pustekserpong.com</p>
+					</div>
+					<h3>Ikuti Kami</h3>
+					<div class="pro-links">
+						<a
+							href="https://www.youtube.com/channel/UCllWlcfiJOg9JrdpJ5JzJMw"
+							target="_blank"
+							style="width: 58px"
+						>
+							<img src="images/tentang-b.png" alt="" />
+						</a>
+						<a
+							href="https://www.instagram.com/smk.pustek/"
+							target="_blank"
+							style="width: 58px"
+						>
+							<img src="images/tentang-c.png" alt="" />
+						</a>
+						<a
+							href="https://twitter.com/smk_pustek"
+							target="_blank"
+							style="width: 58px"
+						>
+							<img src="images/tentang-f.png" alt="" />
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="form">
+				<h4>Saran Pengembangan</h4>
+				<p style="padding-left: 0px">
+					Saran pengembangan untuk SMK Pustek Serpong
+				</p>
+				<div class="form-row">
+					<input type="text" placeholder="Name" />
+					<input type="text" placeholder="Email" />
+				</div>
+				<div class="form-col">
+					<input type="text" placeholder="Subject" />
+
+					<textarea
+						name=""
+						id=""
+						cols="30"
+						rows="8"
+						placeholder="What Should We Develop?"
+						style="height: 290px"
+					></textarea>
+				</div>
+				<div class="form-col">
+					<button id="btnn">Send Message</button>
+
+					<script>
+						const btnn = document.getElementById("btnn");
+						btnn.addEventListener("click", function () {
+							Swal.fire({
+								title: "Thank You!",
+								text: "Terima kasih atas saran nya!",
+								imageUrl: "images/kontak.jpg",
+								imageWidth: 356,
+								imageHeight: 200,
+								imageAlt: "Custom image",
+								confirmButtonText: "Back",
+							});
+						});
+					</script>
+				</div>
+			</div>
+		</section>
+
+		<section id="map">
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.992360200822!2d106.65271931476937!3d-6.264733995465504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fb0a7ac974d3%3A0x9c1c7d9e6806703f!2sSekolah%20Menengah%20Kejuruan%20Pustek%20Serpong!5e0!3m2!1sid!2sid!4v1662870467949!5m2!1sid!2sid"
+				style="border: 0"
+				allowfullscreen=""
+				loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade"
+			></iframe>
+		</section>
+		<footer>
+			<div class="footer-col">
+				<h3>Copyright © 2022 I This Website is made by bimaaQt.</h3>
+			</div>
+			<div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+		</footer>
+		<script>
+			function showTime() {
+				var date = new Date();
+				var h = date.getHours(); // 0 - 23
+				var m = date.getMinutes(); // 0 - 59
+				var s = date.getSeconds(); // 0 - 59
+				var session = "AM";
+
+				if (h == 0) {
+					h = 12;
+				}
+
+				if (h > 24) {
+					h = h - 24;
+					session = "PM";
+				}
+
+				h = h < 10 ? "0" + h : h;
+				m = m < 10 ? "0" + m : m;
+				s = s < 10 ? "0" + s : s;
+
+				var time = h + ":" + m + ":" + s + " " + session;
+				document.getElementById("MyClockDisplay").innerText = time;
+				document.getElementById("MyClockDisplay").textContent = time;
+
+				setTimeout(showTime, 1000);
+			}
+
+			showTime();
+		</script>
+	</body>
+</html>

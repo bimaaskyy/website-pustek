@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatibe" content="IE-edge" />
+		<meta name="vieport" content="width=device-width, initial-scale=1.0" />
+		<title>SMK PUSTEK SERPONG</title>
+
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<!-- Navigation -->
+		<nav>
+			<img src="images/Logo_pustek.png" alt="" />
+			<div class="navigation">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="tentang.html">About</a></li>
+					<li><a class="active" href="jurusan.html">Majors</a></li>
+					<li><a href="ekskul.html">Extracurricular</a></li>
+					<li><a href="galeri.html">Gallery</a></li>
+					<li><a href="kontak.html">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- home -->
+		<section id="majors-container">
+			<div class="majorss majorpost">
+				<div class="post">
+					<img src="images/pustek/tp.jpg" alt="" />
+					<h3>Teknik Permesinan</h3>
+					<p>
+						Teknik Permesinan adalah jurusan yang mempelajari tentang energi dan
+						sumber energinya. Hal-hal yang dipelajari dalam teknik mesin banyak
+						berurusan dengan penggerak-penggerak awal seperti turbin uap, motor
+						bakar, mesin-mesin perkakas, pompa dan kompresor, pendingin dan
+						pemanas dan alat-alat kimia tertentu. <br /><br />
+						<strong
+							><span style="font-size: small; color: #008000"
+								>A. DASAR TEKNIK MESIN</span
+							></strong
+						><br /><br /><span>- Mengenal dasar ilmu statika dan tegangan</span
+						><br /><span>- Mengenal komponen mesin</span><br /><span
+							>- Mengenal dasar pemesinan</span
+						><br /><span>- Mengenal spesifikasi geometri</span><br /><span
+							>- Mengenal dasar mesin perkakas dan otomatis</span
+						><br /><span>- Mengenal dasar-dasar mesin konversi energi</span
+						><br /><span
+							>- Memahami teknik dasar pompa, kompresor, refrigerasi</span
+						><br /><span>- Memahami dasar motor bakar torak</span><br /><span
+							>- Mengenal teknik dasar turbin</span
+						><br /><br /><strong
+							><span style="font-size: small; color: #008000"
+								>B. KOMPETENSI KEJURUAN</span
+							></strong
+						><br /><br /><span
+							>- Pengukuran dengan alat ukur mekanik presisi</span
+						><br /><span style="font-size: small"
+							>- Menggunakan perkakas Tangan</span
+						><br /><span style="font-size: small">- Menggunakan alat ukur</span
+						><br /><span style="font-size: small"
+							>- Melakukan perhitungan dasar</span
+						><br /><span style="font-size: small"
+							>- Mengoperasikan dan mengamati mesin/proses</span
+						><br /><span>- Melakukan perhitungan (lanjutan )</span><br /><span
+							>- Melakukan perhitungan matematis</span
+						><br /><span>- Membaca gambar teknik</span><br /><span
+							>- Mengoperasikan mesin NC/CNC (dasar )</span
+						><br /><span>- Menggunakan mesin untuk operasi dasar</span
+						><br /><span>- Bekerja dengan mesin umum</span><br /><span
+							>- Melakukan pekerjaan dengan mesin bubut</span
+						><br /><span>- Melakukan pekerjaan dengan mesin frais</span
+						><br /><span>- Melakukan pekerjaan dengan mesin gurinda</span
+						><br /><span>- Mengeset mesin dan pogram mesin NC/CNC (dasar)</span
+						><br /><span>- Menggerinda pahat dan alat potong</span><br /><span
+							>- Mengefrais (Kompleks)</span
+						><br /><span>- Membubut (Kompleks)</span><br /><span
+							>- Mengeset dan mengedit Mesin NC/CNC (dasar)</span
+						><br /><span>- Memprogram Mesin NC/CNC (dasar)</span><br /><span
+							>- Keterampilan Komputer, MS Office, Excel, Auto Cad, PhotoShop,
+							PowerPoint</span
+						><br /><br />
+					</p>
+					<a href="javascript:history.back()">Back</a>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="footer-col">
+				<h3>Copyright © 2022 I This Website is made by bimaaQt.</h3>
+			</div>
+			<div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+		</footer>
+		<script>
+			function showTime() {
+				var date = new Date();
+				var h = date.getHours(); // 0 - 23
+				var m = date.getMinutes(); // 0 - 59
+				var s = date.getSeconds(); // 0 - 59
+				var session = "AM";
+
+				if (h == 0) {
+					h = 12;
+				}
+
+				if (h > 24) {
+					h = h - 24;
+					session = "PM";
+				}
+
+				h = h < 10 ? "0" + h : h;
+				m = m < 10 ? "0" + m : m;
+				s = s < 10 ? "0" + s : s;
+
+				var time = h + ":" + m + ":" + s + " " + session;
+				document.getElementById("MyClockDisplay").innerText = time;
+				document.getElementById("MyClockDisplay").textContent = time;
+
+				setTimeout(showTime, 1000);
+			}
+
+			showTime();
+		</script>
+	</body>
+</html>
